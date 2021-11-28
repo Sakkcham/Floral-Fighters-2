@@ -33,6 +33,7 @@ function createEnemy(){
     var enemy=createSprite(positionsE[i],height-500);
     enemy.addImage(enemy_1);
     enemy.scale=0.8;
+    enemy.velocityY=+4;
   }
 }
 function createBullets(){
@@ -62,6 +63,6 @@ function draw(){
   if(bk.y<250){
     bk.y=height/2;
   }
-
+   
   drawSprites();
 }
